@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:terminal-backend >--------------------
+[INFO] Building terminal-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.0:run (default-cli) > test-compile @ terminal-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ terminal-backend ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ terminal-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ terminal-backend ---
+[INFO] skip non existing resourceDirectory /Users/sanjivankumar/Documents/Boons Work/Github/Stripe Example/java-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ terminal-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.0:run (default-cli) < test-compile @ terminal-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.0:run (default-cli) @ terminal-backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2025-12-09T11:28:07.759-08:00  INFO 26002 --- [           main] c.e.t.TerminalBackendApplication         : Starting TerminalBackendApplication using Java 23.0.2 with PID 26002 (/Users/sanjivankumar/Documents/Boons Work/Github/Stripe Example/java-server/target/classes started by sanjivankumar in /Users/sanjivankumar/Documents/Boons Work/Github/Stripe Example/java-server)
+2025-12-09T11:28:07.760-08:00  INFO 26002 --- [           main] c.e.t.TerminalBackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T11:28:08.048-08:00  INFO 26002 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4567 (http)
+2025-12-09T11:28:08.055-08:00  INFO 26002 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T11:28:08.055-08:00  INFO 26002 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-09T11:28:08.073-08:00  INFO 26002 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-09T11:28:08.073-08:00  INFO 26002 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 293 ms
+2025-12-09T11:28:08.202-08:00  INFO 26002 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4567 (http) with context path '/'
+2025-12-09T11:28:08.205-08:00  INFO 26002 --- [           main] c.e.t.TerminalBackendApplication         : Started TerminalBackendApplication in 0.578 seconds (process running for 0.705)
+2025-12-09T11:28:08.385-08:00  INFO 26002 --- [0.0-4567-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T11:28:08.385-08:00  INFO 26002 --- [0.0-4567-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T11:28:08.386-08:00  INFO 26002 --- [0.0-4567-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-09T11:28:08.392-08:00  WARN 26002 --- [0.0-4567-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-12-09T12:39:07.883-08:00  INFO 26002 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T12:39:07.891-08:00  INFO 26002 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
