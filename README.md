@@ -1,7 +1,7 @@
 # Stripe Terminal M2 - End-to-End POC
 
 **Status:** SUCCESS (Payment Flow Verified)
-**Lead:** [Your Name/Title]
+
 
 This repository contains a complete, working Proof of Concept (POC) for the **Stripe Terminal M2 Reader** integration on React Native (Android), backed by a custom **Java Spring Boot** server.
 
