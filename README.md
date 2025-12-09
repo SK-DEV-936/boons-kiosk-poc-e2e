@@ -16,8 +16,11 @@ This solution resolves previous integration blockers by implementing a verifiabl
 | Component | Tech Stack | Port | Description |
 | :--- | :--- | :--- | :--- |
 | **Backend** | Java Spring Boot | `4567` | Handles Stripe Secrets, Token Creation, Payment Intents |
-| **Mobile** | React Native | N/A | Android App that connects to M2 Reader via Bluetooth |
+| **Mobile** | React Native | N/A | Android App that connects to M2 Reader via **Bluetooth Low Energy (BLE)** |
 | **Protocol** | REST / HTTPS | N/A | Mobile App talks to Backend to get Tokens/Intents |
+
+> **Note on Environment:** This setup was fully tested and validated in a **Local Environment** (Localhost Backend + Android Tablet on LAN WiFi). It does not require a cloud deployment to verify the E2E flow.
+
 
 ---
 
