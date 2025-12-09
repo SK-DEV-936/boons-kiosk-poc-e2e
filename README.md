@@ -108,4 +108,18 @@ API_URL=http://<YOUR_LOCAL_IP>:4567
 ## 5. Next Steps for Production Team
 1.  **Copy `TerminalController.java` endpoints** to the main production backend.
 2.  **Update Mobile App `api.ts`** to match the logging and parsing logic shown here.
-3.  **Perform UAT** using a **Stripe Test Card** (Physical White Card). Do NOT use real credit cards in Test Mode (they will decline).
+
+---
+
+## 6. Key Files for Developer Review
+
+Developers implementing the production solution should focus their code review on these specific files:
+
+| Scope | File Path | Purpose |
+| :--- | :--- | :--- |
+| **Backend Logic** | [`java-server/.../TerminalController.java`](java-server/src/main/java/com/example/terminalbackend/TerminalController.java) | Contains the specific endpoints (`create_payment_intent`) and the correct response map logic. |
+| **Mobile API** | [`.../example-app/src/api/api.ts`](stripe-terminal-react-native/example-app/src/api/api.ts) | Shows how to properly log requests and parse the specific `id` field from the backend. |
+| **Mobile UI** | [`.../src/screens/CollectCardPaymentScreen.tsx`](stripe-terminal-react-native/example-app/src/screens/CollectCardPaymentScreen.tsx) | Handles the payment flow, including the "Cancel Payment" logic. |
+| **Automation** | [`start_e2e.sh`](start_e2e.sh) | The master script that orchestrates the entire build and run process. |
+| **Config** | [`.../example-app/.env`](stripe-terminal-react-native/example-app/.env) | Where the `API_URL` is defined. Must point to your local machine IP. |
+
