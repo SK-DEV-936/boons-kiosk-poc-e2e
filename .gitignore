@@ -1,0 +1,32 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Java / Spring Boot
+target/
+*.class
+.mvn/wrapper/maven-wrapper.properties
+
+# Android
+android/app/build/
+android/.gradle/
+local.properties
+*.iml
+
+# iOS
+ios/Pods/
+ios/build/
+*.xcworkspace
+*.xcuserdatad
+
+# App Specific
+.env
+backend.log
+api.log
